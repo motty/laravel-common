@@ -1,0 +1,29 @@
+{
+    "name": "motty/laravel-common",
+    "description": "Laravel - Common classes & services",
+    "authors": [
+        {
+            "name": "Israel Sotomayor",
+            "email": "israel@motty.io",
+            "role" : "Developer"
+        }
+    ],
+    "keywords": [
+        "framework",
+        "laravel",
+        "lumen",
+        "common",
+        "classes",
+        "services"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Motty\\Laravel\\Common\\": "app/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
