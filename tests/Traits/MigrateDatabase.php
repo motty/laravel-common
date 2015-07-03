@@ -10,9 +10,9 @@ use Illuminate\Support\Facades\Artisan;
 trait MigrateDatabase
 {
     /**
-     * @beforeClass
+     * @before
      */
-    public static function migrateDatabase()
+    public function migrateDatabase()
     {
         // migrate database according to our environment parameter MIGRATIONS_PATH
         Artisan::call('migrate', ['--path' => env('MIGRATIONS_PATH', 'database/migrations')]);
