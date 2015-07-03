@@ -18,6 +18,15 @@
     ],
     "license": "MIT",
     "type": "library",
+    "require": {
+        "php": ">=5.5.9",
+        "vlucas/phpdotenv": "~1.0",
+        "illuminate/support": "~5.1.0",
+        "illuminate/database": "~5.1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
     "autoload": {
         "psr-4": {
             "Motty\\Laravel\\Common\\": "app/",
