@@ -1,6 +1,5 @@
-<?php namespace Motty\Laravel\Common\Testing;
+<?php namespace Motty\Laravel\Common\Testing\Traits;
 
-use Illuminate\Support\Facades\App;
 use Illuminate\Database\Eloquent\Factory;
 
 /**
@@ -13,11 +12,11 @@ trait RelocateFactories
     /**
      * @before
      */
-    public static function relocateFactories()
+    public function relocateFactories()
     {
         // change factories path
         // https://laracasts.com/discuss/channels/laravel/l51-how-to-change-factories-path-when-using-model-factories
-        App::singleton(Factory::class, function () {
+        $this->app->singleton(Factory::class, function () {
             return Factory::construct(env('FACTORIES_PATH', 'database/factories'));
         });
     }

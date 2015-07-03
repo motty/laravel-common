@@ -1,8 +1,7 @@
-<?php namespace Motty\Laravel\Common\Testing;
+<?php namespace Motty\Laravel\Common\Testing\Traits;
 
 /**
- * Reset Models' events after each test to trigger eloquent
- * models when testing
+ * Reset Models' events after each test to trigger eloquent models events when testing
  *
  * @see https://github.com/laravel/framework/issues/1181
  */

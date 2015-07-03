@@ -1,9 +1,9 @@
-<?php namespace Motty\Laravel\Common\Testing;
+<?php namespace Motty\Laravel\Common\Testing\Traits;
 
 use Illuminate\Support\Facades\Artisan;
 
 /**
- * This class will migrate the database according to our environment parameter MIGRATIONS_PATH
+ * Trait used to migrate the database according to our environment parameter MIGRATIONS_PATH
  *
  * @package Motty\Laravel\Common\Testing\Traits
  */

@@ -1,9 +1,11 @@
-<?php namespace Motty\Laravel\Common\Testing;
+<?php namespace Motty\Laravel\Common\Testing\Traits;
+
+use Illuminate\Support\Facades\DB;
 
 /**
- * Method used to clean the database, this will be a specific method in charge of
+ * Trait used to clean the database, this will be a specific method in charge of
  * restart all the autoincrement index, truncate the tables if needed and all
- * the task related to prepare the database before each the test case
+ * the tasks related to prepare the database before each the test case
  *
  * @package Motty\Laravel\Common\Testing\Traits
  */
